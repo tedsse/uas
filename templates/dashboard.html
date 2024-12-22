@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Dashboard</h1>
+<p>Below is the visualization of the predicted data:</p>
+
+<!-- Visualisasi -->
+<div class="mt-4">
+    <img src="/plot.png" alt="Grafik Prediksi" class="img-fluid">
+</div>
+
+<!-- Tabel Data Historis -->
+<h2 class="mt-5">Data Historis</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Tahun</th>
+            <th>Jumlah Gangguan Jiwa</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for data in historical_data %}
+        <tr>
+            <td>{{ data.tahun }}</td>
+            <td>{{ "{:,}".format(data.total_gangguan_jiwa) }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!-- Tabel Prediksi -->
+<h2 class="mt-5">Prediksi Masa Depan</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Tahun</th>
+            <th>Prediksi Gangguan Jiwa</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for data in prediction_data %}
+        <tr>
+            <td>{{ data.tahun }}</td>
+            <td>{{ "{:,}".format(data.total_gangguan_jiwa) }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
+

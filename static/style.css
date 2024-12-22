@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  header nav a,
+  header .auth-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  aside {
+    background-color: #333;
+    width: 200px;
+    color: #fff;
+    padding-top: 20px;
+  }
+  
+  aside ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  aside ul li a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  aside ul li a:hover {
+    background-color: #444;
+  }
+   
+  .member-img {
+    width: 150px;
+    height: 100px;
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+}
+  
+  main {
+    padding: 20px;
+    flex: 1;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 0px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+/* Gaya untuk halaman register */
+.register-form {
+  justify-content: center;
+  align-items: center;
+  padding: 40px; /* Jarak dalam untuk form */
+  width: 100%;
+  max-width: 400px; /* Batas lebar maksimal form */
+  background-color: #00ffcc;
+  border: 1px solid #00ffcc;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+  border-radius: 5px;
+}
+
+/* Gaya untuk input */
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  width: 100%; /* Lebar input penuh */
+  padding: 15px; /* Jarak dalam untuk input */
+  margin: 10px 0; /* Jarak antar input */
+  border: 1px solid #c4c1c1; /* Warna border */
+  border-radius: 5px; /* Ketumpulan sudut input */
+}
+
+/* Gaya untuk tombol register */
+.register-form button {
+  background-color: #2a2a2a;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Gaya untuk tombol saat dihover */
+.register-form button:hover {
+  background-color: #1f1f1f;
+}
+
+
+/* Gaya untuk halaman login */
+.login-form {
+  padding: 50px; /* Jarak dalam untuk form */
+  width: 100%;
+  max-width: 400px; /* Batas lebar maksimal form */
+  background-color: #00ffcc;
+  border: 1px solid #00ffcc;
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+  border-radius: 5px;
+}
+
+/* Gaya untuk input */
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%; /* Lebar input penuh */
+  padding: 15px; /* Jarak dalam untuk input */
+  margin: 10px 0; /* Jarak antar input */
+  border: 1px solid #c4c1c1; /* Warna border */
+  border-radius: 5px; /* Ketumpulan sudut input */
+}
+
+/* Gaya untuk tombol login */
+button {
+  background-color: #2a2a2a;
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Gaya untuk tombol saat dihover */
+button:hover {
+  background-color: #1f1f1f;
+}
+
+
+
+
+
+
+
+
+ 
