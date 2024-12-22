@@ -5,6 +5,9 @@
     ],
     "routes": [
       { "src": "/(.*)", "dest": "app.py" }
-    ]
+    ],
+    "cache": {
+      "path": "node_modules"  
+    }
   }
   
